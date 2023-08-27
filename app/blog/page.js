@@ -4,16 +4,6 @@ import styles from '../Blog.module.css';
 import Link from 'next/link';
 import InfiniteScroll from 'react-infinite-scroll-component';
 
-export async function getStaticProps() {
-  const response = await fetch('http://localhost:8000/api/blogs')
-  const blogData = await response.json();
-
-  return {
-    props: {
-      posts,
-    },
-  }
-}
 
 
 export default function Blog({ posts }) {
