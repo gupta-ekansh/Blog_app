@@ -1,0 +1,80 @@
+.mainnav ul{
+    display:flex;
+    justify-content: center;
+}
+.mainnav ul li{
+    margin:0 24px;
+    list-style:none;
+    font-weight: bold;
+    color:black
+}
+.mainnav ul a{
+    text-decoration: none;
+}
+.mainnav ul li:hover{
+    color:grey;
+    cursor: pointer;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.heroSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: calc(100vh - 100px);
+  background-image: url('../public/logo.png');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.heroContent {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 50px; /* Added padding to separate content from image */
+}
+
+.heroTitle {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.heroDescription {
+  font-size: 18px;
+  margin-bottom: 32px;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.heroImage {
+  width: 250px; /* Adjust image width as needed */
+  height: auto;
+  margin-top: 20px; /* Added margin to separate image from content */
+}
+.exploreButton {
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.exploreButton:hover {
+  background-color: #0056b3;
+}
+
