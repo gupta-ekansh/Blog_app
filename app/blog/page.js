@@ -6,8 +6,7 @@ import InfiniteScroll from 'react-infinite-scroll-component';
 
 
 
-const Blog = ({ posts }) => {
-  console.log(posts)
+const Blog = () => {
   const [blogs, setBlogs] = useState([])
   const [loading, setLoading] = useState(true)
   useEffect(() => {
