@@ -6,7 +6,7 @@ import InfiniteScroll from 'react-infinite-scroll-component';
 
 
 
-export default function Blog({ posts }) {
+const Blog = ({ posts }) => {
   console.log(posts)
   const [blogs, setBlogs] = useState([])
   const [loading, setLoading] = useState(true)
@@ -49,4 +49,5 @@ export default function Blog({ posts }) {
   )
 }
 
+export default Blog;
 
